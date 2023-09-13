@@ -1,11 +1,35 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.mrspock182</groupId>
+    <groupId>io.github.mrspock182</groupId>
     <artifactId>quillo</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>quillo</name>
+    <description>Lib de validacao de CNPJ por anotação</description>
+    <url>https://github.com/MrSpock182/quillo</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/MrSpock182/quillo.git</connection>
+        <developerConnection>scm:git:ssh://github.com/MrSpock182/quillo.git</developerConnection>
+        <url>https://github.com/MrSpock182/quillo</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Kleber Nunes</name>
+            <email>klebernunes182@gmail.com</email>
+            <organization>Studio Trek</organization>
+            <organizationUrl>https://github.com/MrSpock182</organizationUrl>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,6 +48,7 @@
             <version>2.0.2</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
