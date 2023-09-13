@@ -1,4 +1,4 @@
-package io.github.mrspock182;
+package com.github.mrspock182;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
