@@ -7,7 +7,7 @@
     <packaging>jar</packaging>
     <name>safira-validation</name>
     <description>Lib de validacao de CNPJ por anotação</description>
-    <url>https://github.com/MrSpock182/quillo</url>
+    <url>https://github.com/MrSpock182/safira-validation</url>
 
     <licenses>
         <license>
@@ -17,9 +17,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/MrSpock182/quillo.git</connection>
-        <developerConnection>scm:git:ssh://github.com/MrSpock182/quillo.git</developerConnection>
-        <url>https://github.com/MrSpock182/quillo</url>
+        <connection>scm:git:git://github.com/MrSpock182/safira-validation.git</connection>
+        <developerConnection>scm:git:ssh://github.com/MrSpock182/safira-validation.git</developerConnection>
+        <url>https://github.com/MrSpock182/safira-validation</url>
     </scm>
 
     <developers>
@@ -37,15 +37,16 @@
 
     <dependencies>
         <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
-            <version>2.0.2</version>
         </dependency>
     </dependencies>
 
