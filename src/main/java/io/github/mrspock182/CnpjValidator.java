@@ -1,7 +1,8 @@
 package io.github.mrspock182;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+
 import java.util.InputMismatchException;
 
 public class CnpjValidator implements ConstraintValidator<Cnpj, String> {
