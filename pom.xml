@@ -2,12 +2,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.mrspock182</groupId>
-    <artifactId>safira-validation</artifactId>
+    <artifactId>quillo</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>safira-validation</name>
+    <name>quillo</name>
     <description>Lib de validacao de CNPJ por anotação</description>
-    <url>https://github.com/MrSpock182/safira-validation</url>
+    <url>https://github.com/MrSpock182/quillo</url>
 
     <licenses>
         <license>
@@ -15,12 +15,6 @@
             <url>http://www.opensource.org/licenses/mit-license.php</url>
         </license>
     </licenses>
-
-    <scm>
-        <connection>scm:git:git://github.com/MrSpock182/safira-validation.git</connection>
-        <developerConnection>scm:git:ssh://github.com/MrSpock182/safira-validation.git</developerConnection>
-        <url>https://github.com/MrSpock182/safira-validation</url>
-    </scm>
 
     <developers>
         <developer>
@@ -30,6 +24,13 @@
             <organizationUrl>https://github.com/MrSpock182</organizationUrl>
         </developer>
     </developers>
+
+    <distributionManagement>
+        <repository>
+            <id>space-maven</id>
+            <url>https://maven.pkg.jetbrains.space/studiotrek/p/main/maven</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -49,17 +50,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
 
     <build>
         <plugins>
@@ -110,17 +100,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.13</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
             </plugin>
         </plugins>
     </build>
